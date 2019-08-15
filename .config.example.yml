@@ -1,15 +1,14 @@
-default: # `default` as application name
-  # database config
-  database:
-    driver: mysql
-    host: localhost
-    username: root
-    password:
-    name: db_name
-  # cache config
-  cache:
-    driver: redis
-  # security config
-  security:
-    salt: <fill with random string>
-    hash: <fill with random string>
+# database config
+database:
+  driver: mysql
+  host: localhost
+  username: root
+  password:
+  name: db_name
+# cache config
+cache:
+  driver: redis
+# security config
+security:
+  salt: <fill with random string>
+  hash: <fill with random string>
