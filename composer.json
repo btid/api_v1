@@ -1,0 +1,31 @@
+{
+  "name": "arrayiterator/api_v1",
+  "require": {
+    "php": "^7.2.9",
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "ext-curl": "*",
+    "slim/slim": "^3.12",
+    "doctrine/migrations": "^2.1",
+    "pentagonal/database-dbal": "^1",
+    "apatis/config": "^1",
+    "symfony/console": "^4.3",
+    "guzzlehttp/guzzle": "^6",
+    "psr/http-message": "^1.0",
+    "symfony/yaml": "^3",
+    "filp/whoops": "^2.3",
+    "monolog/monolog": "^1.2",
+    "mongodb/mongodb": "^1.4"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.*"
+  },
+  "config": {
+    "optimize-autoloader": true
+  },
+  "autoload": {
+    "psr-4" : {
+      "ArrayIterator\\Api\\Crypt\\Source\\": "app/Source"
+    }
+  }
+}

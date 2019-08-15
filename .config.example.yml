@@ -1,0 +1,12 @@
+default: # `default` as application name
+  # database config
+  database:
+    driver: mysql
+    host: localhost
+    username: root
+    password:
+    name: db_name
+  # security config
+  security:
+    salt: <fill with random string>
+    hash: <fill with random string>
