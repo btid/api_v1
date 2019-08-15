@@ -128,11 +128,11 @@ EOT
             }
 
             // create user
-            if ($this->createUserMaybe($output) === false) {
-                throw new \Exception(
-                    'There are was an error while creating super admin user'
-                );
-            }
+            // if ($this->createUserMaybe($output) === false) {
+            //    throw new \Exception(
+            //        'There are was an error while creating super admin user'
+            //    );
+            //}
         } catch (\Exception $e) {
             $database->rollBack();
             throw $e;

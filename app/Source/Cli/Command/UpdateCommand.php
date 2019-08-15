@@ -95,9 +95,9 @@ EOT
 
         if (empty($sql) || empty($newSQL)) {
             $output->writeln('');
-            if ($this->createUserMaybe($output) !== null) {
-                return;
-            }
+            // if ($this->createUserMaybe($output) !== null) {
+            //    return;
+            //}
 
             $output->writeln('<info>All Database Structures OK</info>');
             $output->writeln('');
@@ -136,7 +136,7 @@ EOT
         }
 
         // create user
-        $this->createUserMaybe($output);
+        // $this->createUserMaybe($output);
         $output->writeln('');
         $output->writeln('<info>Database Structures Updated</info>');
         $output->writeln('');
